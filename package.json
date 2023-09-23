@@ -1,0 +1,15 @@
+{
+  "name": "hive-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hive-push-development": "./push-dev-schema.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphql-hive/cli": "^0.29.0"
+  }
+}
