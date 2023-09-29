@@ -9,6 +9,7 @@ const typeDefs = `#graphql
   # This "Book" type defines the queryable fields for every book in our data source.
   type Book {
     title: String
+    isbn: String
     author: String
   }
 
@@ -16,6 +17,11 @@ const typeDefs = `#graphql
   # clients can execute, along with the return type for each. In this
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
+    books: [Book]
+  }
+
+  type Author {
+    name: String
     books: [Book]
   }
 `;
