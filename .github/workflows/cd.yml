@@ -18,4 +18,6 @@ jobs:
       - name: Trigger Frontend
         uses: peter-evans/repository-dispatch@v1
         with:
+          token: ${{ secrets.PAT }}
+          repository: FacundoGFlores/hive-fe
           event-type: schema-published
