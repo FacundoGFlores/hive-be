@@ -21,6 +21,7 @@ const typeDefs = `#graphql
   }
 
   type Author {
+    id: ID!
     name: String
     books: [Book]
   }
