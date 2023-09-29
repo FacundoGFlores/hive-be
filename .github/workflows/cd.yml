@@ -16,4 +16,6 @@ jobs:
           hive schema:publish "schema.graphql" \
             --registry.accessToken ${{ env.HIVE_TOKEN }} \
       - name: Trigger Frontend
-        event-type: schema-published
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          event-type: schema-published
