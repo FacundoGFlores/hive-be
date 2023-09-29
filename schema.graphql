@@ -1,5 +1,6 @@
 type Author {
   books: [Book]
+  id: ID!
   name: String
 }
 
