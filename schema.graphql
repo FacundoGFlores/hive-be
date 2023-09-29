@@ -19,7 +19,7 @@ enum UserRole {
 }
 
 type Post {
-  id: ID!
+  id: String!
   title: String!
   content: String!
 }
