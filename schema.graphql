@@ -1,6 +1,5 @@
 type Book {
   author: String
-  isbn: String
   title: String
 }
 
