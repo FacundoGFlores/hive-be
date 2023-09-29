@@ -15,9 +15,3 @@ jobs:
           curl -sSL https://graphql-hive.com/install.sh | sh
           hive schema:publish "schema.graphql" \
             --registry.accessToken ${{ env.HIVE_TOKEN }} \
-      - name: Trigger Frontend
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.PAT }}
-          repository: FacundoGFlores/hive-fe
-          event-type: schema-published
