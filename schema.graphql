@@ -1,4 +1,5 @@
 type Author {
+  address: String
   books: [Book]
   id: ID!
   name: String
@@ -7,7 +8,6 @@ type Author {
 type Book {
   author: String
   id: ID!
-  isbn: String
   title: String
 }
 
