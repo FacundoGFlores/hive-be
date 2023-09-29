@@ -1,25 +1,8 @@
-type Query {
-  viewer: ViewerQuery!
-  user(id: ID!): User!
-}
- 
-type ViewerQuery {
-  user: User!
-  role: UserRole!
-}
- 
-type User {
-  id: ID!
-  name: String!
-  age: Int!
-}
- 
-enum UserRole {
-  ADMIN
+type Book {
+  author: String
+  title: String
 }
 
-type Post {
-  id: String!
-  title: String!
-  content: String!
+type Query {
+  books: [Book]
 }
