@@ -8,7 +8,7 @@ const typeDefs = `#graphql
 
   # This "Book" type defines the queryable fields for every book in our data source.
   type Book {
-    id: ID!
+    id: String!
     title: String
     isbn: String
     author: String
